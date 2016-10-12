@@ -3,7 +3,11 @@
 
 # Machine name.
 function box_name {
-  echo ${HOST%%.*}
+  if [[ "$HOST" == "BOSMM" || "$HOST" == "Leos-MacBook-Pro.local" ]]; then
+    echo "home"
+  else
+    echo ${HOST%%.*}
+  fi
 }
 
 # Check and set environment
