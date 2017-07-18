@@ -3,7 +3,7 @@
 # Author: https://github.com/pstadler
 
 if [ $commands[kubectl] ]; then
-  source <(kubectl completion zsh | sed -e '/flaghash.*true/s/# pad/2>\/dev\/null # pad/')
+  source ~/.oh-my-zsh/plugins/kubectl/kubectl-auto.sh
 fi
 
 # This command is used ALOT both below and in daily life
