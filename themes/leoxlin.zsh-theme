@@ -43,7 +43,7 @@ local kube_info='$(kubectl config current-context)'
 PROMPT="
 %{$fg[cyan]%}%n\
 %{$fg[white]%} @ \
-%{$fg[green]%}$(box_name)$(env)%{$reset_color%} \
+%{$fg[green]%}$(box_name)%{$reset_color%} \
 + %{$fg[red]%}${kube_info}%{$reset_color%} \
 %{$fg[white]%}> \
 %{$fg[yellow]%}%c%{$reset_color%}\
