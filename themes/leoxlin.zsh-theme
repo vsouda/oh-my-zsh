@@ -3,7 +3,7 @@
 
 # Machine name.
 function box_name {
-  if [[ "$HOST" == "BOSMM" || "$HOST" == "Leos-MacBook-Pro.local" ]]; then
+  if [[ "$HOST" == *"BOSMM"* || "$HOST" == "Leos-MacBook-Pro.local" ]]; then
     echo "home"
   else
     echo ${HOST%%.*}
